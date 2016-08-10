@@ -1,0 +1,25 @@
+{
+  "name": "purescript-fiddle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/Main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pscid": "^1.11.0",
+    "pulp": "^9.0.1",
+    "purescript": "^0.9.3",
+    "purescript-psa": "^0.3.9"
+  },
+  "scripts": {
+    "build": "pulp build",
+    "test": "pulp test",
+    "dev": "pscid --test --port 1701",
+    "build:babel": "babel src -s -d lib",
+    "postinstall": "bower install",
+    "build:json": "pulp build --include lib:test --no-psa --json-errors"
+  },
+  "author": "Devin Rhode"
+}
